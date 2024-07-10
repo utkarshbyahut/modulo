@@ -1,12 +1,16 @@
-a = int(input("Num 1 : "))
-b = int(input("Num 2 : "))
+# Computing the modulo of 2 Integers
 
-while ((a>=b) or (a<=b)):
+# Input the 2 integers into the console 
+intInput1 = int(input("Number 1 : "))
+intInput2 = int(input("Number 2 : "))
 
-    if a >= b:
-        a = a - b
+# Running a while loop to check when intInput1 is not equal to intInput2
+while (intInput2 != intInput2):
 
-    elif b >= a:
-        b = b - a
+    if (intInput2 < intInput1):
+        intInput1 -= intInput2
 
-print(f"Mod is {a}")
+    if (intInput1 < intInput2):
+        intInput2 -= intInput1
+
+print(f"Mod is {intInput1}")
